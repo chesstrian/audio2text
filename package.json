@@ -1,0 +1,25 @@
+{
+  "name": "audio2text",
+  "version": "0.0.1",
+  "description": "Audio to text using IBM Watson API",
+  "main": "dst",
+  "scripts": {
+    "build": "babel src --presets babel-preset-es2015 --out-dir dst",
+    "prestart": "npm run build",
+    "start": "node dst",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "config": "^1.24.0",
+    "watson-developer-cloud": "^2.9.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-preset-es2015": "^6.18.0"
+  },
+  "author": {
+    "name": "Christian Gutierrez Sierra",
+    "email": "chesstrian@gmail.com"
+  },
+  "license": "ISC"
+}

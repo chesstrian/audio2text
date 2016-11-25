@@ -1,0 +1,8 @@
+{
+  "speech_setup": {
+    "url": "https://stream.watsonplatform.net/speech-to-text/api",
+    "password": "h3TsLBgrgKPZ",
+    "username": "e8023c0a-ace3-4b88-b90e-c10365a4e080",
+    "version": "v1"
+  }
+}
