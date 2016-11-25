@@ -20,7 +20,7 @@ const recognizeStream = speech2Text.createRecognizeStream(params);
 fs.readdirSync(path.join(__dirname, '..', 'audios')).forEach(function (file) {
   if (file.endsWith('.wav')) {
     fs.createReadStream(path.join(__dirname, '../audios', file)).pipe(recognizeStream);
-    recognizeStream.pipe(fs.createWriteStream(path.join(__dirname, '../texts', file.replace('.wav, .txt'))));
+    recognizeStream.pipe(fs.createWriteStream(path.join(__dirname, '../texts', file.replace('.wav', '.txt'))));
 
     recognizeStream.setEncoding('utf8');
 
